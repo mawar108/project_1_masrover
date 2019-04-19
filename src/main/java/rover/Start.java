@@ -19,7 +19,7 @@ public class Start {
 		}
 		//Mars.mars[40][10] = " ";
 		//World.outPrintMap();
-		int[] a = world.findRover();
+		int[] a = Rover.findRover();
 		System.out.println(a[0] + "" + a[1]);
 	}
 
