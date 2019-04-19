@@ -10,7 +10,8 @@ public class Mars {
 
 	static char[][] mars = new char[x][y];
 	static char hinderniss = '#';
-	static Random random = new Random();
+	static char Luft = ' ';
+	Random random = new Random();
 
 
 	public void initMap() {

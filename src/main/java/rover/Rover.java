@@ -1,10 +1,8 @@
 package rover;
 
 public class Rover {
-	static int[] position = {Mars.x / 2, Mars.y / 2};
-	char state = '^';
+	static int xposition = Mars.x / 2;
+	static int yposition = Mars.y / 2;
+	static char state = '^';
 
-	public static int[] findRover() {
-		return position;
-	}
 }
