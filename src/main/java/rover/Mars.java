@@ -9,22 +9,23 @@ public class Mars {
 	static int y = 20;
 
 	static char[][] mars = new char[x][y];
-	static char hinderniss = '#';
-	static char Luft = ' ';
+	static char barrier = '#';
+	static char air = ' ';
 	Random random = new Random();
 
 
 	public void initMap() {
-		int rx = x / 2;
-		int ry = y / 2;
+		int halfX = x / 2;
+		int halfY = y / 2;
 		for (int i = 0; i < x; i++) {
 			for (int j = 0; j < y; j++) {
-				mars[i][j] = Luft;
-				if (random.nextDouble() < 0.25)
-					mars[i][j] = hinderniss;
+				mars[i][j] = air;
+				if (random.nextDouble() < 0.25) {
+					mars[i][j] = barrier;
+				}
 			}
 		}
-		mars[rx][ry] = '^';
+		mars[halfX][halfY] = '^';
 	}
 
 	public void outPrintMap() {

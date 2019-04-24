@@ -10,10 +10,10 @@ public class Start {
 			// System.out.println("Seed: " + seed);
 		}
 		world.initMap();
-		String befehle = args[0];
+		String commands = args[0];
 		world.outPrintMap();
-		for (int i = 0; i < befehle.length(); i++) {
-			Move.make(befehle.charAt(i));
+		for (int i = 0; i < commands.length(); i++) {
+			Move.doCommands(commands.charAt(i));
 			world.outPrintMap();
 		}
 	}
