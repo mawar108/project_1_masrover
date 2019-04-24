@@ -19,6 +19,7 @@ public class Mars {
 		int ry = y / 2;
 		for (int i = 0; i < x; i++) {
 			for (int j = 0; j < y; j++) {
+				mars[i][j] = Luft;
 				if (random.nextDouble() < 0.25)
 					mars[i][j] = hinderniss;
 			}
@@ -39,6 +40,3 @@ public class Mars {
 		System.out.println();
 	}
 }
-
-
-
